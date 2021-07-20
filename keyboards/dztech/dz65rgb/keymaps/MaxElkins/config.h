@@ -6,29 +6,29 @@
 
 #ifdef RGB_MATRIX_ENABLE
 /* Reset default from dz65rgb/v2 config.h */
-#	undef DISABLE_RGB_MATRIX_SPLASH 
-#	undef DISABLE_RGB_MATRIX_SOLID_SPLASH 
+#	undef DISABLE_RGB_MATRIX_SPLASH
+#	undef DISABLE_RGB_MATRIX_SOLID_SPLASH
 #	undef RGB_MATRIX_LED_FLUSH_LIMIT
 #	undef RGB_MATRIX_STARTUP_MODE
 #	undef RGB_MATRIX_MAXIMUM_BRIGHTNESS
 #	define RGB_MATRIX_MAXIMUM_BRIGHTNESS 255
-#	define RGB_MATRIX_LED_FLUSH_LIMIT 16 // default: 26 
-#	define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_TYPING_HEATMAP
+#	define RGB_MATRIX_LED_FLUSH_LIMIT 16 // default: 26
+#	define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR
 #	define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-#	define RGB_MATRIX_STARTUP_HUE 10
-#	define RGB_MATRIX_STARTUP_SAT 255
-#	define RGB_MATRIX_STARTUP_VAL 200
+#	define RGB_MATRIX_STARTUP_HUE 0
+#	define RGB_MATRIX_STARTUP_SAT 0
+#	define RGB_MATRIX_STARTUP_VAL 255
 #	define RGB_MATRIX_STARTUP_SPD 75
 /* Active RBG Modes */
 /* #	define DISABLE_RGB_MATRIX_TYPING_HEATMAP   		// How hot is your WPM! */
 /* #	define DISABLE_RGB_MATRIX_SPLASH           		// Full gradient & value pulse away from a single key hit then fades value out */
 /* #	define DISABLE_RGB_MATRIX_SOLID_SPLASH     		// Hue & value pulse away from a single key hit then fades value out */
 /* Disabling to optimize firmware size */
-#	define DISABLE_RGB_MATRIX_ALPHAS_MODS         		// Static dual hue, speed is hue for secondary hue 
+#	define DISABLE_RGB_MATRIX_ALPHAS_MODS         		// Static dual hue, speed is hue for secondary hue
 #	define DISABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT 		// Static gradient left to right, speed controls how much gradient changes
-#	define DISABLE_RGB_MATRIX_BREATHING           		// Single hue brightness cycling animation 
-#	define DISABLE_RGB_MATRIX_BAND_VAL            		// Single hue band fading brightness scrolling left to right 
-#	define DISABLE_RGB_MATRIX_BAND_PINWHEEL_VAL   		// Single hue 3 blade spinning pinwheel fades brightness 
+#	define DISABLE_RGB_MATRIX_BREATHING           		// Single hue brightness cycling animation
+#	define DISABLE_RGB_MATRIX_BAND_VAL            		// Single hue band fading brightness scrolling left to right
+#	define DISABLE_RGB_MATRIX_BAND_PINWHEEL_VAL   		// Single hue 3 blade spinning pinwheel fades brightness
 #	define DISABLE_RGB_MATRIX_BAND_SPIRAL_VAL     		// Single hue spinning spiral fades brightness
 #	define DISABLE_RGB_MATRIX_CYCLE_ALL           		// Full keyboard solid hue cycling through full gradient
 #	define DISABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT    		// Full gradient scrolling left to right
@@ -49,4 +49,4 @@
 /* Firmware size Optimizations */
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
-#define NO_ACTION_ONESHOT 
+#define NO_ACTION_ONESHOT
